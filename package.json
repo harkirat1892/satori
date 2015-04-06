@@ -1,0 +1,29 @@
+{
+    "name": "satori",
+    "version": "1.0.0",
+    "description": "A simple Lisp interpreter.",
+    "main": "index.js",
+    "scripts": {
+        "repl": "node repl",
+        "eval": "node eval",
+        "test": "node test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/syouts/satori.git"
+    },
+    "keywords": [
+        "lisp",
+        "interpreter",
+        "satori"
+    ],
+    "author": "Stephen Youts <stephen@bitsofirreverence.com> (http://bitsofirreverence.com)",
+    "licenses": {
+        "type": "BSD-2-Clause",
+        "url": "https://github.com/syouts/satori/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/syouts/satori/issues"
+    },
+    "homepage": "https://github.com/syouts/satori"
+}
