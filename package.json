@@ -4,8 +4,6 @@
     "description": "A simple Lisp interpreter.",
     "main": "index.js",
     "scripts": {
-        "repl": "node repl",
-        "eval": "node eval",
         "test": "node test"
     },
     "repository": {
@@ -15,7 +13,8 @@
     "keywords": [
         "lisp",
         "interpreter",
-        "satori"
+        "satori",
+        "scheme"
     ],
     "author": "Stephen Youts <stephen@bitsofirreverence.com> (http://bitsofirreverence.com)",
     "licenses": {
@@ -25,5 +24,9 @@
     "bugs": {
         "url": "https://github.com/syouts/satori/issues"
     },
-    "homepage": "https://github.com/syouts/satori"
+    "homepage": "https://github.com/syouts/satori",
+    "preferGlobal": "true",
+    "bin": {
+        "satori" : "lib/satori.js"
+    }
 }
