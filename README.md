@@ -163,12 +163,12 @@ The following is an example session demonstrating their usage and syntax.
 λ> x
 => 10
 
-λ> (set closure-example (lambda ()
-                          (define x 5)
-                          (define y 10)
-                          (memdump)
-                          (lambda ()
-                            (+ x y))))
+λ> (define closure-example (lambda ()
+                             (define x 5)
+                             (define y 10)
+                             (memdump)
+                             (lambda ()
+                               (+ x y))))
 => <Function>
 
 λ> ((closure-example))
@@ -203,6 +203,7 @@ The following is an example session demonstrating their usage and syntax.
 
 ## Release History
 
+* 1.0.4 Documentation fixes
 * 1.0.3 Updated node package
 * 1.0.2 Expanded documentation
 * 1.0.1 Expanded documentation
