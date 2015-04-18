@@ -203,6 +203,7 @@ The following is an example session demonstrating their usage and syntax.
 
 ## Release History
 
+* 1.0.3 Updated node package
 * 1.0.2 Expanded documentation
 * 1.0.1 Expanded documentation
 * 1.0.0 Initial release

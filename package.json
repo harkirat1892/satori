@@ -1,6 +1,6 @@
 {
     "name": "satori",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "A simple Lisp interpreter.",
     "main": "index.js",
     "scripts": {
