@@ -15,6 +15,7 @@ Satori provides a REPL, as well as the ability to evaluate files.
 
 ```sh
 $ satori
+λ>
 ```
 
 ```sh
@@ -135,7 +136,9 @@ The following is an example session demonstrating their usage and syntax.
 λ> ((lambda (x y) (+ x y)) 1 2)
 => 3
 
-λ> (define adder (lambda (x) (lambda (y) (+ x y))))
+λ> (define adder (lambda (x)
+                   (lambda (y)
+                     (+ x y))))
 => <Function>
 
 λ> (define increment (adder 1))
@@ -160,7 +163,12 @@ The following is an example session demonstrating their usage and syntax.
 λ> x
 => 10
 
-λ> (set closure-example (lambda () (define x 5) (define y 10) (memdump) (lambda () (+ x y))))
+λ> (set closure-example (lambda ()
+                          (define x 5)
+                          (define y 10)
+                          (memdump)
+                          (lambda ()
+                            (+ x y))))
 => <Function>
 
 λ> ((closure-example))
@@ -195,6 +203,8 @@ The following is an example session demonstrating their usage and syntax.
 
 ## Release History
 
+* 1.0.2 Expanded documentation
+* 1.0.1 Expanded documentation
 * 1.0.0 Initial release
 
 ## License
